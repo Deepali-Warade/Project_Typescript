@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+<head>
+    
+</head>
+<body>
+    <header>        
+        <div class="topnav">
+            <a href="index.html" class="mainlinks">Home</a>
+            <a href="login.html" class="mainlinks">Login</a>
+            <a href="report.html" class="mainlinks">Report</a>
+            <a href="contact.html" class="mainlinks">Contact</a>
+            <div class="search-group"> 
+                <label for="searchdata">Search</label>
+                 <input type="search" id="searchdata" name="searchdata">
+                 <input type="submit" id="submitsearch" name="submitsearch">  
+             </div>
+        </div>
+    </header>
+   
+    <div class ="loginoptions">       
+        <fieldset>
+            <div class="well">
+                <h2>New Customer</h2>
+                <p><strong>Register account</strong></p>
+                <p>By creating an account you will be able generate reports easily.</p>
+            <button data-user="Register" onclick="location.href='Register.html'" >Register</button>           
+            </div>
+        </fieldset>
+        <fieldset>
+        <div class="well">
+            <h2>Returning Customer</h2>
+            <p><strong>I am a returning customer</strong></p>
+            <form name ="myForm" action="success1.html" onsubmit ="return myFunction()" method="GET">          
+                <div><label for="username">Username:</label></div>
+                <div><input type="text" id="username" name="username" placeholder="username"><br><br></div>
+                <div><label for="Password">Password:</label></div>
+                <div><input type="password" id="password" name="password" placeholder="password"><br><br></div>                    
+                <button id="loginbtn" >Login</button>  
+               
+            </form>  
+            
+        </div>
+        </fieldset>
+        
+    </div>
+    
+   <script type="text/javascript" src="../typescript-cucumber/src/Login.js">
+    </script>
+ 
+</body>
+</html>
